@@ -1,0 +1,21 @@
+{	
+	"prefix": "multi", 
+	"defaultSessionName": "bot", 
+	"zeksKey": "doceditormmx", 
+	"xkey": "your_key", 
+        "lolkey": "b47358d04b1cfe811b2bc1e2", 
+        "uhykey": "doceditormmx",
+	"autoRead": false, 
+	"maxLimit": 100, 
+	"ownerList": ["918078499283@s.whatsapp.net","919061363103@s.whatsapp.net"],
+	"apiUrl": "https://api.zeks.me",
+        "apiLol": "https://api.lolhuman.xyz",
+        "apiUhy": "https://dapuhy-api.herokuapp.com",
+        "imgUrl": "https://i.ibb.co/7nxZWSX/MMX-BLUE-PURPLE.png",
+        "igUrl": "https://instagram.com/doceditormmx",
+        "githubUrl": "https://github.com/doceditormmx",
+	"botname": "PINKY", 
+        "ownername": "Doceditor",
+	"pack": "PINKY", 
+	"author": "By Doceditor"
+}
