@@ -10,7 +10,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-blue.svg" />
   </a>
 </p>
-<a href="https://wa.me/message/IZ5ZIVGIQL2NJ1"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+<a href="https://chat.whatsapp.com/KMqKhTPA1sHB6GCbEpAOiY"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
  
 </div>
 
@@ -48,7 +48,7 @@ Note : If you want to work, check the column 1,2,3,5,6
 Clone this project
 
 ```bash
-> git clone https://github.com/dvnz99/wabot
+> git clone https://github.com/doceditormmx/DOCBOTv7
 > cd wabot
 ```
 
@@ -90,8 +90,8 @@ after running it you need to scan the qr
 ```sh
 INSTALL
 > pkg i nodejs && ffmpeg && git clone
-> git clone https://github.com/Dvnz99/wabot
-> cd wabot
+> git clone https://github.com/doceditormmx/DOCBOTv7
+> cd DOCBOTv7
 > npm i
 
 RUN BOT
@@ -118,9 +118,9 @@ TURN OFF
 ## Session name and options is optional
 ## Contact me
 
-- [TELEGRAM](https://t.me/justpiple)
-- [WHATSAPP](https://wa.me/message/IZ5ZIVGIQL2NJ1)
-- [GROUP CHAT WHATSAPP](https://chat.whatsapp.com/EV2o7Y4C2XNDT5AAQPZjqt)
+- [INSTA](https://instagram.com/doceditormmx)
+- [WHATSAPP](https://wa.me/+919061363103)
+- [GROUP CHAT WHATSAPP](https://chat.whatsapp.com/KMqKhTPA1sHB6GCbEpAOiY)
 
 
 ## 🙏 Special Thanks to
