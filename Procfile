@@ -1,2 +1,1 @@
-Worker: node .
-Worker: npm start 
+web: node . --server
