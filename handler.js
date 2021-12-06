@@ -78,6 +78,11 @@ var ucapanWaktu = 'Good night'
                 "rowId": `${data.prefix}dwmenu`
               }, 
               {
+                "title": "Sticker Menu", 
+                "description": "", 
+                "rowId": `${data.prefix}smenu`
+              }, 
+              {
                 "title": "Education Menu", 
                 "description": "", 
                 "rowId": `${data.prefix}emenu`
@@ -161,6 +166,13 @@ var ucapanWaktu = 'Good night'
          Client.cmd.on('dwmenu', async(data) => {
                    try {
                     data.reply(dwmenu(data.prefix)) 
+                   } catch(e) {
+                     data.reply('' + e) 
+                   }
+         })
+         Client.cmd.on('smenu', async(data) => {
+                   try {
+                    data.reply(smenu(data.prefix)) 
                    } catch(e) {
                      data.reply('' + e) 
                    }
@@ -1237,6 +1249,20 @@ RAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.ro
                                      }
                     let zz = await client.prepareMessageFromContent(from, {buttonsMessage: buttonMessage}, {})
                 	client.relayWAMessage(zz, {waitForAck: true})     
+                    break
+                    /*STICKER*/
+                case 'sgif':
+                case 'sticker':
+                case 's':
+                case 'stiker':
+                case 'stickergif':
+                case 'stikergif':
+                    if(isLimit(data.sender)) return data.reply(mess.limit)
+                    if(type != 'videoMessage' && !isQuotedVideo && !isQuotedImage && type != 'imageMessage') return data.reply('Wrong format!')
+                    const getbuff = data.isQuotedVideo || data.isQuotedImage ? JSON.parse(JSON.stringify(data.message).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : data.message
+                    const dlfile = await client.downloadMediaMessage(getbuff)
+                    if(type == 'videoMessage' || isQuotedVideo) Client.sendMp4AsSticker(from, dlfile.toString('base64'), message, { pack: `${configs.pack}`, author: `${configs.author}` })
+                    else Client.sendImageAsSticker(from, dlfile.toString('base64'), message, { pack: `${configs.pack}`, author: `${configs.author}` })
                     break
                 case 'tomp3':
                     if(isLimit(data.sender)) return data.reply(mess.limit)
